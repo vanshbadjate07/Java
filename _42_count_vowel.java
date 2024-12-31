@@ -1,4 +1,10 @@
-class _69_vowel_count {
+/*
+Create a method that counts the number of vowels in a StringBuffer. Initialize it with any
+string and print the number of vowels.
+Input: "Hello World"
+Output: 3
+ */
+class _42_count_vowel{
     public static void main(String args[]) {
         StringBuffer sb = new StringBuffer("Hello World");
 
