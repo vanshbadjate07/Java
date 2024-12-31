@@ -3,13 +3,22 @@ Implement a method that capitalizes the first letter of each word in a given Str
 Input: "hello world"
 Output: "Hello World"
  */
-class _34_capitalize{
-    public static void main(String args[]){
-        String str = "Hello World";
-        
-        String s1 = str.subSting(0,4);
-        String s2 = str.subSting(6,10);
+class _48_capitalfirstletter {
+    public static void main(String args[]) {
+        String input = "hello world";
 
-        
+        String[] words = input.split(" ");
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < words.length; i++) {
+            
+            String firstLetter = words[i].substring(0, 1).toUpperCase();
+            
+            String restOfWord = words[i].substring(1);
+            
+            result.append(firstLetter + restOfWord + " ");
+        }
+
+        System.out.println(result.toString().trim());
     }
 }
